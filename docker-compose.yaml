@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+    forgeserver:
+        container_name: forgeserver
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.5'
+                    memory: 6144M
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+          - 25565:25565
+        volumes:
+          - ./mods:/srv/forge/mods
+
