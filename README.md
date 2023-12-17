@@ -2,7 +2,7 @@
 
 Este repositório foi criado para configurar e executar um servidor Minecraft utilizando Docker, aproveitando uma imagem personalizada baseada em Arch Linux que utiliza systemd para gerenciar os serviços.
 
-A proposta é possibilitar ter um servidor próprio, portátil e exposto na internet. Para isso, a implementação escolhida foi rodar o servidor como um contêiner Docker, o que permite exportá-lo como um contêiner zipado e disponibilizá-lo na internet com o ngrok, permitindo que qualquer pessoa com o link possa se conectar. Essa abordagem traz a vantagem de desvincular o mundo e o servidor de um único computador. Além disso, os clientes não precisam lidar com inconvenientes para se conectar ao servidor, necessitando apenas de acesso à internet. O host também possui vantagens nesse sentido, precisando apenas ter o Docker instalado, sem a necessidade de lidar com a instalação do Java.
+A proposta é possibilitar ter um servidor próprio, portátil e exposto na internet. Para isso, a implementação escolhida foi rodar o servidor como um contêiner Docker, o que permite exportá-lo como um contêiner zipado ou expô-lo na internet com o ngrok, permitindo que qualquer pessoa com o link possa se conectar. Essa abordagem traz a vantagem de desvincular o mundo e o servidor de um único computador. Além disso, os clientes não precisam lidar com inconvenientes para se conectar ao servidor, necessitando apenas de acesso à internet. O host também possui vantagens nesse sentido, precisando apenas ter o Docker instalado, sem a necessidade de lidar com a instalação do Java.
 
 ### Arquivos do Projeto
 
