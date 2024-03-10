@@ -17,10 +17,7 @@
 
 5. **`expose.sh`:**
    O arquivo `expose.sh` executa o comando `ngrok tcp 25565` dentro do contêiner do servidor Forge do Minecraft (`forgeserver`). Isso pode ser utilizado para expor o servidor Minecraft local através do serviço ngrok.
-
-6. **`stop.sh`:**
-   O script `stop.sh` está disponível para parar o servidor Minecraft. Execute-o quando desejar interromper o funcionamento do servidor.
-
+   
 ### Configuração
 
 1. Personalize as configurações do servidor Minecraft editando os arquivos eula.txt e server.properties localizados no diretório config.
