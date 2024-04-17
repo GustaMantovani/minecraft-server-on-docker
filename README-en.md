@@ -7,7 +7,7 @@ The motivation is to make possible to own a personal, portable and exposed on th
 ### Project Files
 
 1. **`docker-compose.yml`:**
-    The docker-compose.yml file defines the Docker service configuration for the Forge Minecraft Server. It specifies the resources, like CPUs and memory, the exposed ports and the volumes built for the server. The mods volume allows the addition of mods for your world outside the Docker container. Furthermore, the configurated resources were tested and are considered as a minimum requirement for the proper functioning of the server. Any configuration bellow these parameters caused problems during the tests.
+    The `docker-compose.yml` file defines the Docker service configuration for the Forge Minecraft Server. It specifies the resources, like CPUs and memory, the exposed ports and the volumes built for the server. The mods volume allows the addition of mods for your world outside the Docker container. Furthermore, the configurated resources were tested and are considered as a minimum requirement for the proper functioning of the server. Any configuration bellow these parameters caused problems during the tests.
 
 3. **`Dockerfile`:**
     The Dockerfile was built with an Arch Linux personalized image as a base. It configures and prepares the environment to execute the Minecraft server, utilizing systemd to manage the services.
