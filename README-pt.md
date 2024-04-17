@@ -7,10 +7,10 @@
 ### Arquivos do Projeto
 
 1. **`docker-compose.yml`:**
-   O arquivo docker-compose.yml define a configuração do serviço Docker para o servidor Forge do Minecraft. Ele especifica os recursos, como CPUs e memória, as portas expostas e os volumes montados para o servidor. O volume mods possibilita a adição de mods para o seu mundo de fora do container Docker. Além disso, os recursos configurados foram testados e são considerados como o mínimo necessário para o funcionamento adequado do servidor. Qualquer configuração abaixo desses parâmetros causou problemas durante os testes realizados.
+   O arquivo `docker-compose.yml` define a configuração do serviço Docker para o servidor Forge do Minecraft. Ele especifica os recursos, como CPUs e memória, as portas expostas e os volumes montados para o servidor. O volume mods possibilita a adição de mods para o seu mundo de fora do container Docker. Além disso, os recursos configurados foram testados e são considerados como o mínimo necessário para o funcionamento adequado do servidor. Qualquer configuração abaixo desses parâmetros causou problemas durante os testes realizados.
    
 3. **`Dockerfile`:**
-   O arquivo Dockerfile foi construído com base em uma imagem personalizada baseada em Arch Linux. Ele configura e prepara o ambiente para executar o servidor Minecraft, utilizando systemd para gerenciar os serviços.
+   O arquivo `Dockerfile` foi construído com base em uma imagem personalizada baseada em Arch Linux. Ele configura e prepara o ambiente para executar o servidor Minecraft, utilizando systemd para gerenciar os serviços.
 
 4. **`install.sh`:**
    O script `install.sh` é um script de shell que inicia o serviço do servidor Forge do Minecraft em um contêiner Docker utilizando `docker-compose`.
@@ -26,6 +26,6 @@
 
 ### Usabilidade
 
-1. Após iniciar o servidor com o script start.sh, o mapeamento de porta estará configurado de forma que qualquer computador poderá se conectar ao servidor utilizando o IP do host e a porta padrão 25565.
+1. Após iniciar o servidor com o script `start.sh`, o mapeamento de porta estará configurado de forma que qualquer computador poderá se conectar ao servidor utilizando o IP do host e a porta padrão 25565.
 
-2. Também é possível expor o servidor na internet com o script expose.sh. Após sua execução, o prompt do ngrok será aberto, exibindo o domínio do servidor. Esse domínio será utilizado para a conexão. No menu de conexão do Minecraft, basta utilizar a informação presente no campo "Forwarding" exibido no prompt do ngrok.
+2. Também é possível expor o servidor na internet com o script `expose.sh`. Após sua execução, o prompt do ngrok será aberto, exibindo o domínio do servidor. Esse domínio será utilizado para a conexão. No menu de conexão do Minecraft, basta utilizar a informação presente no campo "Forwarding" exibido no prompt do ngrok.
